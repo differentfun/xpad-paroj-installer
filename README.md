@@ -37,6 +37,9 @@ $ `./install_xpad.sh`
 - The patched xpad driver from `paroj/xpad`
 - A DKMS module at `/usr/src/xpad-0.4`
 
+## 🧹 Optional: HP Accelerometer blacklister
+With that script, you can prevent your HP notebook to see assign the accelerometer driver to the joypad. Be warned, that script will prevent the load of the accelerometer module (if you have an hdd, you'll loose the anti-impact protection).
+
 ## 🧹 Optional: Revert to stock xpad
 
 If needed, you can remove the DKMS version and restore the original:
