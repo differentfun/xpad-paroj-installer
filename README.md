@@ -23,13 +23,21 @@ This script automates the full process of:
 
 Clone this repo and run the script:
 
-$ `git clone https://github.com/differentfun/xpad-paroj-installer.git`
+```bash
+git clone https://github.com/differentfun/xpad-paroj-installer.git
+```
 
-$ `cd xpad-paroj-installer`
+```bash
+cd xpad-paroj-installer
+```
 
-$ `chmod +x install_xpad.sh`
+```bash
+chmod +x install_xpad.sh
+```
 
-$ `./install_xpad.sh`
+```bash
+./install_xpad.sh
+```
 
 ## 📥 What Gets Installed
 
@@ -44,18 +52,20 @@ With that script, you can prevent your HP notebook to see assign the acceleromet
 
 If needed, you can remove the DKMS version and restore the original:
 
-$ `sudo dkms remove -m xpad -v 0.4 --all`
+```bash
+sudo dkms remove -m xpad -v 0.4 --all
+```
 
-$ `sudo mv /lib/modules/$(uname -r)/kernel/drivers/input/joystick/xpad.ko.disabled /lib/modules/$(uname -r)/kernel/drivers/input/joystick/xpad.ko`
+```bash
+sudo mv /lib/modules/$(uname -r)/kernel/drivers/input/joystick/xpad.ko.disabled /lib/modules/$(uname -r)/kernel/drivers/input/joystick/xpad.ko
+```
 
-$ `sudo update-initramfs -u`
+```bash
+sudo update-initramfs -u
+```
 
 
 ## 🙏 Credits
 
 - Driver source: [paroj/xpad](https://github.com/paroj/xpad)
 - Script created by [differentfun](https://github.com/differentfun)
-
-## 🛠️ License
-
-MIT License
